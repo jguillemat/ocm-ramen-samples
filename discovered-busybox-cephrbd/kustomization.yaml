@@ -1,0 +1,8 @@
+---
+resources:
+- busybox-pvc1.yaml
+- busybox-pvc2.yaml
+- busybox-pvc3.yaml
+- busybox-deployment1.yaml
+- busybox-deployment2.yaml
+- busybox-deployment3.yaml
