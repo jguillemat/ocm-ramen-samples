@@ -3,17 +3,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    appname: busybox
-  name: busybox
+    appname: busybox2
+  name: busybox2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      appname: busybox
+      appname: busybox2
   template:
     metadata:
       labels:
-        appname: busybox
+        appname: busybox2
     spec:
       containers:
       - image: docker.io/library/busybox:stable
@@ -26,4 +26,4 @@ spec:
       volumes:
         - name: mypvc
           persistentVolumeClaim:
-            claimName: busybox-pvc
+            claimName: busybox-pvc2
