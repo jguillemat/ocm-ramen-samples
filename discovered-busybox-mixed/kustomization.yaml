@@ -1,0 +1,6 @@
+---
+resources:
+- busybox-cephfs-pvc.yaml
+- busybox-rbd-pvc.yaml
+- busybox-cephfs-deployment.yaml
+- busybox-rbd-deployment.yaml
