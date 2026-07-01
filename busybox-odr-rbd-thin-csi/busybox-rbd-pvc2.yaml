@@ -5,7 +5,7 @@ metadata:
   name: busybox-pvc-rbd2
   labels:
     appname: busybox
-    dr-protect: true
+    dr-protect: "true"
 spec:
   accessModes:
   - ReadWriteOnce
