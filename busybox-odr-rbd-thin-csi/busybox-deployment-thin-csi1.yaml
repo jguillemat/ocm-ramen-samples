@@ -26,4 +26,4 @@ spec:
       volumes:
         - name: mypvc
           persistentVolumeClaim:
-            claimName: busybox-thin-csi-pvc1
+            claimName: busybox-pvc-thin-csi1
