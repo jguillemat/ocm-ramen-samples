@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: busybox-pvc-thin-csi1
+  labels:
+    appname: busybox
+    instance: busybox-pvc-thin-csi1
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: thin-csi
+  resources:
+    requests:
+      storage: 5Gi
