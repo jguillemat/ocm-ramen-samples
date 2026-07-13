@@ -1,0 +1,6 @@
+---
+resources:
+- busybox-pvc-thin-csi1.yaml
+- busybox-pvc-thin-csi2.yaml
+- busybox-deployment-thin-csi1.yaml
+- busybox-deployment-thin-csi2.yaml

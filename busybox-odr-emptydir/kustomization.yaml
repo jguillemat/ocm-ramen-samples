@@ -1,0 +1,5 @@
+---
+resources:
+- busybox-deployment-emptydir1.yaml
+- busybox-deployment-emptydir2.yaml
+
