@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox-rbd2
+  labels:
+    appname: busybox-rbd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      appname: busybox-rbd2
+  template:
+    metadata:
+      labels:
+        appname: busybox-rbd2
+    spec:
+      containers:
+      - image: docker.io/library/busybox:stable
+        imagePullPolicy: IfNotPresent
+        name: busybox
+        command: ['sh', '-c', 'trap exit TERM; while true; do echo $(date) | tee -a /mnt/test/outfile; sync; sleep 1; done']
+        volumeMounts:
+          - name: mypvc
+            mountPath: /mnt/test
+      volumes:
+        - name: mypvc
+          persistentVolumeClaim:
+            claimName: busybox-rbd-pvc2

@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: busybox-thin-csi-pvc1
+  labels:
+    appname: busybox
+    dr-protected-enabled: "false"
+spec:
+  accessModes:
+  - ReadWriteMany
+  storageClassName: ocs-storagecluster-thin-csi
+  resources:
+    requests:
+      storage: 5Gi
