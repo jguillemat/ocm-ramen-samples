@@ -8,7 +8,7 @@ metadata:
     dr-protected-enabled: "false"
 spec:
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   storageClassName: thin-csi
   resources:
     requests:
