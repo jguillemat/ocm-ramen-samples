@@ -1,0 +1,4 @@
+---
+resources:
+- gethostname-pvc-rbd.yaml
+- gethostname-v1-deployment.yaml

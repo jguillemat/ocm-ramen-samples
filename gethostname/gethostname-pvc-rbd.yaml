@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: gethostname-pvc-rbd
+  labels:
+    app: gethostname-v1
+    dr-protected-enabled: "true"
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: ocs-storagecluster-ceph-rbd
+  resources:
+    requests:
+      storage: 5Gi
