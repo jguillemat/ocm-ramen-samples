@@ -5,6 +5,7 @@ metadata:
   name: busybox-rbd-pvc2
   labels:
     appname: busybox
+    instance: busybox-rbd2
     dr-protected-enabled: "true"
 spec:
   accessModes:

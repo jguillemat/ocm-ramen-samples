@@ -5,6 +5,7 @@ metadata:
   name: busybox-thin-csi-pvc2
   labels:
     appname: busybox
+    instance: busybox-thin-csi2
     dr-protected-enabled: "false"
 spec:
   accessModes:

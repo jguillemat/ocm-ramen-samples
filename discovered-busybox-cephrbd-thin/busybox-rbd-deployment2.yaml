@@ -4,7 +4,8 @@ kind: Deployment
 metadata:
   name: busybox-rbd2
   labels:
-    appname: busybox-rbd
+    appname: busybox
+    instance: busybox-rbd2
 spec:
   replicas: 1
   selector:

@@ -4,7 +4,8 @@ kind: Deployment
 metadata:
   name: busybox-thin-csi1
   labels:
-    appname: busybox-thin-csi
+    appname: busybox
+    instance: busybox-thin-csi1     
 spec:
   replicas: 1
   selector:

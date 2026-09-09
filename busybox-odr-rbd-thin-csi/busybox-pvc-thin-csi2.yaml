@@ -6,6 +6,7 @@ metadata:
   labels:
     appname: busybox
     instance: busybox-pvc-thin-csi2
+    dr-protected-enabled: "false"            
 spec:
   accessModes:
   - ReadWriteOnce

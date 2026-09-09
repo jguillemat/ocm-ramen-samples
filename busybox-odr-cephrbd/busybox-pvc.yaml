@@ -6,6 +6,7 @@ metadata:
   labels:
     appname: busybox
     placement: busybox-placement-1
+    dr-protected-enabled: "true"
 spec:
   accessModes:
   - ReadWriteOnce
