@@ -5,6 +5,7 @@ metadata:
   name: busybox-pvc
   labels:
     appname: busybox
+    dr-protected-enabled: "true"            
 spec:
   accessModes: [ "ReadWriteOnce" ]
   storageClassName: "rook-ceph-block"

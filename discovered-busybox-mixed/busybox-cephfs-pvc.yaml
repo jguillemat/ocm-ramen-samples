@@ -5,7 +5,8 @@ metadata:
   name: busybox-pvc-cephfs
   labels:
     appname: busybox
-    placement: busybox-placement-1
+    instance: busybox-cephfs
+    dr-protected-enabled: "true"
 spec:
   accessModes:
   - ReadWriteMany

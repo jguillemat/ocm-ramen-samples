@@ -7,6 +7,7 @@ metadata:
     appname: busybox
     instance: busybox2
     placement: busybox-placement-1
+    dr-protected-enabled: "true"            
 spec:
   accessModes:
   - ReadWriteMany
