@@ -8,3 +8,5 @@ resources:
 - busybox-thin-csi-deployment2.yaml
 - busybox-rbd-deployment1.yaml
 - busybox-rbd-deployment2.yaml
+- gethostname-pvc-rbd.yaml
+- gethostname-v1-deployment.yaml
