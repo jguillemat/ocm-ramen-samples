@@ -3,17 +3,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    appname: busybox-rbd
+    appname: busybox
+    instance: busybox-rbd    
   name: busybox-rbd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      appname: busybox-rbd
+      deployment: busybox-rbd
   template:
     metadata:
       labels:
-        appname: busybox-rbd
+        deployment: busybox-rbd
     spec:
       containers:
       - image: docker.io/library/busybox:stable

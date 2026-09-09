@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: gethostname-pvc-rbd
   labels:
-    app: gethostname-v1
+    appname: gethostname-v1
     dr-protected-enabled: "true"
 spec:
   accessModes:

@@ -9,11 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      appname: busybox-rbd2
+      deployment: busybox-rbd2
   template:
     metadata:
       labels:
-        appname: busybox-rbd2
+        deployment: busybox-rbd2
     spec:
       containers:
       - image: docker.io/library/busybox:stable

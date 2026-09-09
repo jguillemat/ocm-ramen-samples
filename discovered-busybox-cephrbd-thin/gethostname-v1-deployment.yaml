@@ -3,9 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: gethostname-v1
-    app.kubernetes.io/component: gethostname-v1
-    app.kubernetes.io/instance: gethostname-v1
+    appname: gethostname-v1
   name: gethostname-v1
 spec:
   progressDeadlineSeconds: 600

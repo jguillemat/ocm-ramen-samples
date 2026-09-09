@@ -5,6 +5,7 @@ metadata:
   name: busybox-pvc-rbd
   labels:
     appname: busybox
+    instance: busybox-rbd
     placement: busybox-placement-1
 spec:
   accessModes:
